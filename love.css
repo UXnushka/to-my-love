@@ -1,0 +1,86 @@
+
+body {
+   background: url(https://images.pexels.com/photos/220118/pexels-photo-220118.jpeg)
+   no-repeat ;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background-size: cover;
+   background-position: center;
+   z-index: 1;
+  
+ }
+ 
+ #letter {
+   background-color: #fff;
+   background-image: url(https://png.pngtree.com/background/20210716/original/pngtree-bokeh-light-background-gradient-picture-image_1354791.jpg);
+   position: relative;
+   background-size: cover;
+   background-position: center;
+   padding: 50px;
+   border-radius: 10px;
+   box-shadow: 0px 0px 10px rgba(125, 88, 227, 10);
+   
+ }
+ 
+ #letter h1 {
+   font-size: 48px;
+   /* margin-bottom: 50px; */
+   color:rgb(7, 7, 7);
+   font-weight: bolder;
+ }
+ 
+ #letter p {
+   font-size: 30px;
+   line-height: 1.5;
+   margin-bottom: 50px;
+   color: rgb(12, 12, 12);
+   font-weight: bolder;
+ }
+ 
+ #change-btn {
+   background: linear-gradient(45deg, #19b9e0, #f3557a,#f31e8c );
+   color: #030303;
+   border: none;
+   border-radius: 10px;
+   padding: 20px 20px;
+   width: 140px;
+   font-size: 1.30em;
+   font-weight: bolder;
+   cursor: pointer;
+   position: relative;
+   z-index: 1;
+ }
+ 
+ /* #change-btn:hover {
+   background-color: #e63900;
+ } */
+
+ #change-btn::before{
+  content: "";
+  position: absolute;
+  inset: 1px;
+  /* background: #272727; */
+  border-radius: 9px;
+  transition: 0.5s;
+}
+
+#change-btn:hover::before{
+  opacity: 0.7;
+}
+
+#change-btn::after{
+  content: "";
+  position: absolute;
+  inset: 0px;
+  background: linear-gradient(45deg, #0ce39a,#69007f, #fc0987);
+  transition: 0.5s;
+  border-radius: 9px;
+  opacity: 0;
+  /* filter: blur(20px); */
+}
+
+#chage-btn:hover::after{
+  opacity: 1;
+}
